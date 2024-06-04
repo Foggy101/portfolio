@@ -880,8 +880,8 @@ body.offcanvas {
     border-radius: 50%; }
   .progress-bar span {
     position: absolute;
-    top: -22px;
-    right: 0; }
+    top: 10px;
+    right: 10; }
   .progress-bar.color-1 {
     background: #2c98f0; }
     .progress-bar.color-1:after {
