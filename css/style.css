@@ -355,8 +355,8 @@ figure {
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom center;
-        min-height: 400px;
+        background-position: top center;
+        min-height: 60%;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
