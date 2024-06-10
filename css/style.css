@@ -404,7 +404,20 @@ figure {
             /* font-weight: bold; */
             /* -webkit-text-stroke: 0.3px;
             -webkit-text-stroke-color: white;  */
-            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+            /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
+            text-shadow: 
+              0px 0px 5px #fff,
+              0px 0px 5px #fff,
+              0px 0px 5px #fff,
+              0px 0px 5px #fff,
+              0px 0px 2px #fff, 
+              0px 0px 2px #fff, 
+              0px 0px 2px #fff, 
+              0px 0px 2px #fff,
+              0px 0px 1px #fff, 
+              0px 0px 1px #fff, 
+              0px 0px 1px #fff, 
+              0px 0px 1px #fff;
           }}
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
