@@ -185,7 +185,8 @@ figure {
   padding-bottom: 40px;
   float: left;
   width: 300px;
-  position: fixed;
+  height: 100%;
+  position: absolute;
   overflow-y: scroll;
   z-index: 1001;
   background: #f2f3f7;
