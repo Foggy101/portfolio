@@ -444,7 +444,7 @@
 														<div class="row">
 															<div class="container">
 																<div class="image-container">
-																	<div class="image2"><img src="documents/diploma_master.jpg"></div>
+																	<div class="image2"><img src="documents/diploma_master.jpeg"></div>
 																</div>
 																<div class="popup-image">
 																	<span>&times;</span>
@@ -485,7 +485,7 @@
 														  <div class="row">
 															<div class="container">
 																<div class="image-container">
-																	<div class="image2"><img src="documents/diploma_engineer.jpg"></div>
+																	<div class="image2"><img src="documents/diploma_engineer.jpeg"></div>
 																</div>
 																<div class="popup-image">
 																	<span>&times;</span>
@@ -526,8 +526,8 @@
 														  <div class="row">
 															<div class="container">
 																<div class="image-container">
-																	<div class="image2"><img src="documents/diploma_ib.jpg"></div>
-																	<div class="image2"><img src="documents/grades_ib.jpg"></div>
+																	<div class="image2"><img src="documents/diploma_ib.jpeg"></div>
+																	<div class="image2"><img src="documents/grades_ib.jpeg"></div>
 																</div>
 																<div class="popup-image">
 																	<span>&times;</span>
@@ -583,17 +583,6 @@
 							<h2 class="colorlib-heading animate-box">Recent Projects</h2>
 						</div>
 					</div>
-					<!-- <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu">
-								<span><a href="#" class="active">Python</a></span> 
-								<span><a href="#">SQL</a></span> 
-								<span><a href="#">PowerBI</a></span> 
-								<span><a href="#">PowerAutomate</a></span> 
-								<span><a href="#">Excel</a></span>
-							</p>
-						</div>
-					</div> -->
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project" style="background-image: url(images/img-1.jpg);">
@@ -785,17 +774,37 @@
 	
 	<!-- MY OWN -->
 	<script>
-		document.querySelectorAll('.image-container img').forEach(image =>{
-			image.onclick = () =>{
-				document.querySelector('.popup-image').style.display='block';
-				document.querySelector('.popup-image img').src = image.getAttribute('src');
-			}
-		});
+		document.querySelectorAll('.image-container img').forEach(image => {
+			image.onclick = () => {
+				const popupImage = document.querySelector('.popup-image');
+				const popupImageImg = popupImage.querySelector('img');
+				popupImage.style.display = 'block';
+				popupImageImg.src = image.getAttribute('src');
+				
+				popupImageImg.style.maxWidth = '90%';
+           		popupImageImg.style.maxHeight = '90%';
+            	popupImageImg.style.width = 'auto';
+            	popupImageImg.style.height = 'auto';
 
+				// const img = new Image();
+				// img.src = image.getAttribute('src');
+				// img.onload = () => {
+				// 	if (img.width > img.height) {
+				// 		popupImageImg.style.width = '90%';
+				// 		popupImageImg.style.height = 'auto';
+				// 	} else {
+				// 		popupImageImg.style.height = '90%';
+				// 		popupImageImg.style.width = 'auto';
+				// 	}
+				// };
+			};
+		});
+	
 		document.querySelector('.popup-image').onclick = (event) => {
-		if (event.target.tagName !== 'IMG' || event.target.tagName == 'SPAN') {
-			document.querySelector('.popup-image').style.display = 'none';
-		}};
+			if (event.target.tagName !== 'IMG' || event.target.tagName == 'SPAN') {
+				document.querySelector('.popup-image').style.display = 'none';
+			}
+		};
 	</script>
 
 	<!-- MAIN JS -->
