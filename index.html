@@ -780,6 +780,11 @@
 				const popupImageImg = popupImage.querySelector('img');
 				popupImage.style.display = 'block';
 				popupImageImg.src = image.getAttribute('src');
+
+				popupImageImg.style.maxWidth = '90%';
+				popupImageImg.style.maxHeight = '90%';
+				popupImageImg.style.width = 'auto';
+				popupImageImg.style.height = 'auto';
 			};
 		});
 	
