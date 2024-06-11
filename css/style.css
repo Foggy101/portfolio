@@ -497,15 +497,21 @@ body.offcanvas {
     height: 100%;
     background: #f2f3f7;
     z-index: 999;
-    position: fixed; }
+    position: fixed; 
+  }
   body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     top: 0;
-    position: fixed;
+    /* position: relative; */
     -moz-transform: translateX(300px);
     -webkit-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -o-transform: translateX(300px);
     transform: translateX(300px); }
+
+    body.offcanvas .colorlib-nav-toggle {
+      position: fixed;
+      top: 0;
+    }
 
 .colorlib-narrow-content {
   padding: 0 2.5em; }
