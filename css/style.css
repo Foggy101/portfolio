@@ -182,7 +182,7 @@ figure {
 
 #colorlib-aside {
   padding-top: 3em;
-  /* padding-bottom: 40px; */
+  padding-bottom: 0px;
   float: left;
   width: 300px;
   height: 100%;
@@ -258,6 +258,10 @@ figure {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px; }
+        @media screen and (max-width: 768px) {
+          #colorlib-aside #colorlib-main-menu ul li {
+            margin: 0 0 8px 0;
+          }}
         #colorlib-aside #colorlib-main-menu ul li a {
           color: rgba(0, 0, 0, 0.7);
           text-decoration: none;
@@ -316,7 +320,8 @@ figure {
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
         position: relative;
-        bottom: 0;
+        /* bottom: 0; */
+        padding: 0 0px;
       } }
     #colorlib-aside .colorlib-footer span {
       display: block; }
