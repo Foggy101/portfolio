@@ -201,7 +201,7 @@ figure {
       -ms-transform: translateX(-300px);
       -o-transform: translateX(-300px);
       transform: translateX(-300px);
-      padding-top: 4em; } }
+      padding-top: 2em; } }
   #colorlib-aside .author-img {
     width: 150px;
     height: 150px;
@@ -211,6 +211,13 @@ figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
+    @media screen and (max-width: 768px) {
+      #colorlib-aside .author-img {
+      width: 100px;
+      height: 100px;
+      /* margin: 0 auto; */
+      margin-bottom: 10px;
+    }}
   #colorlib-aside .position {
     display: block;
     margin-bottom: 2em;
@@ -494,7 +501,7 @@ body.offcanvas {
     -o-transform: translateX(0);
     transform: translateX(0);
     width: 300px;
-    height: 200%;
+    height: 100%;
     background: #f2f3f7;
     z-index: 999;
     position: fixed; 
